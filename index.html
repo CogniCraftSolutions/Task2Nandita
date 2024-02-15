@@ -3,83 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding:0;
-            margin:0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        html,body{
-            width:100%;
-            height:100%;
-        }
-       
-        .container{
-            width:100%;
-            height:100%;
-            background:rgb(11, 11, 39);
-            position: relative;
-          
-           
-        }
-        .main{
-            width:800px;
-            height:200px;
-            background: white;
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-            
-        }
-        .clock{
-            width:100%;
-            height:100%;
-            border-radius:13px;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-          
-        }
-        .clock span{
-            font-size:50px;
-            
-        }
-        .clock p{
-            font-size: 50px;
-        }
-        .clock #AmPm{
-            margin-left: 15px;
-        }
-        .clock {
-           
-          
-            position: relative;
-            animation: moveClock 5s infinite;
-          }
-          
-        
- @keyframes moveClock {
-    0% {
-      transform: translate(50px, 50px);
-    }
-    25% {
-      transform: translate(100px, 100px);
-    }
-    50% {
-        transform: translate(-50px,-150px);
-      }
-      75% {
-        transform: translate(70px,-80px);
-      }
-      90% {
-        transform: translate(-45px,50px);
-      }
-  } 
-     
-    </style>
+    <title>Disco Clock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -99,17 +24,6 @@
             </div>
         </div>
     </div>
-    <script>
-        let hrs=document.querySelector("#hours");
-        let min=document.querySelector("#min");
-        let sec=document.querySelector("#sec");
-       
-        setInterval(()=>{
-            let date= new Date();
-            hrs.innerHTML=(date.getHours()<10?"0":"")+date.getHours();
-            min.innerHTML=(date.getMinutes()<10?"0":"")+date.getMinutes();
-            sec.innerHTML=(date.getSeconds()<10?"0":"")+date.getSeconds();
-        },1000)
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
