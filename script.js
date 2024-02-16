@@ -29,12 +29,14 @@ function getRandomPosition() {
 
   return { x: randomX, y: randomY };
 }
+
  var colors=["red","green","yellow","cadetblue","navy","brown","coral"];
  var index=0;
  function changeColor(){
-  var randomIndex=Math.floor(Math.random()*colors.length);
-  var color=colors[randomIndex];
-  textCol.style.color=color;
+  // var randomIndex=Math.floor(Math.random()*colors.length);
+  // var color=colors[randomIndex];
+  // textCol.style.color=color;
+  textCol.setAttribute("style",`color :hsl(${Math.random()*360},75%,70%);`);
  }
 //  setInterval(()=>{
 //   changeColor();
