@@ -1,4 +1,4 @@
-*{
+   *{
             padding:0;
             margin:0;
             box-sizing: border-box;
@@ -29,12 +29,13 @@
             font-size: 30px;
                 }
         .main{
-            width:800px;
+            width:900px;
             height:200px;
             animation: blink 5s infinite alternate, disappear 1s forwards;
             position: absolute;
             top:50%;
             left:50%;
+           
             transform:translate(-50%,-50%);
            
         }
@@ -45,6 +46,9 @@
             display:flex;
             align-items:center;
             justify-content:center;
+            color:white;
+            position: relative;
+           
           
         }
         .clock span{
@@ -57,19 +61,15 @@
         .clock #AmPm{
             margin-left: 15px;
         }
-        .clock {
-           
-          color:white;
-            position: relative;
-           
-          }
+       
         .block{
         
             background-color: rgb(24, 24, 53);
-            width:980px;
+            width:990px;
+          
             height:550px;
             border-radius: 12px;
-            box-shadow: 2px 2px ;
+            box-shadow:5px 5px 5px rgb(39, 35, 35);
         }
           
         @keyframes blink {
