@@ -1,74 +1,93 @@
 *{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-html,body{
-    width:100%;
-    height:100%;
-}
-
-.container{
-    width:100%;
-    height:100%;
-    background:black;
-    position: relative;
-
-   
-}
-.main{
-    width:800px;
-    height:200px;
-    animation: blink 5s infinite alternate, disappear 1s forwards;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    
-}
-.clock{
-    width:100%;
-    height:100%;
-    border-radius:13px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-}
-.clock span{
-    font-size:50px;
-    
-}
-.clock p{
-    font-size: 50px;
-}
-.clock #AmPm{
-    margin-left: 15px;
-}
-.clock {
-   
-  color:white;
-    position: relative;
-   
-  }
-  
-@keyframes blink {
-0% {
-opacity: 1;
-
-}
-100% {
-opacity: 0.5;
-
-}
-}
-
-@keyframes disappear {
-0% {
-opacity: 5;
-}
-100% {
-opacity: 0;
-}
-}
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        
+        .container{
+            width:100%;
+            height:100%;
+            background:rgb(15, 15, 34);
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+        
+           
+        }
+        .container h2{
+            position:absolute;
+            color:white;
+            left:10%;
+            top:5%;
+            font-size: 30px;
+                }
+        .main{
+            width:800px;
+            height:200px;
+            animation: blink 5s infinite alternate, disappear 1s forwards;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+           
+        }
+        .clock{
+            width:100%;
+            height:100%;
+            border-radius:13px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+          
+        }
+        .clock span{
+            font-size:50px;
+            
+        }
+        .clock p{
+            font-size: 50px;
+        }
+        .clock #AmPm{
+            margin-left: 15px;
+        }
+        .clock {
+           
+          color:white;
+            position: relative;
+           
+          }
+        .block{
+        
+            background-color: rgb(24, 24, 53);
+            width:980px;
+            height:550px;
+            border-radius: 12px;
+            box-shadow: 2px 2px ;
+        }
+          
+        @keyframes blink {
+        0% {
+        opacity: 1;
+        
+        }
+        100% {
+        opacity: 0.5;
+        
+        }
+        }
+        
+        @keyframes disappear {
+        0% {
+        opacity: 5;
+        }
+        100% {
+        opacity: 0;
+        }
+        }
